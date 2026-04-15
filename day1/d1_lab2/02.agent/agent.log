@@ -1,0 +1,130 @@
+2026-04-15 13:35:03,877 [INFO] ============================================================
+2026-04-15 13:35:03,878 [INFO] 고객 문의 분석 에이전트 시작
+2026-04-15 13:35:03,879 [INFO] 서버 주소: http://localhost:3030
+2026-04-15 13:35:03,879 [INFO] ============================================================
+2026-04-15 13:35:03,879 [INFO] SSE 연결 시도: http://localhost:3030/api/events
+2026-04-15 13:35:04,287 [INFO] HTTP Request: GET http://localhost:3030/api/events "HTTP/1.1 200 OK"
+2026-04-15 13:35:04,288 [INFO] SSE 연결 성공. 이벤트 대기 중...
+2026-04-15 13:35:04,288 [INFO] 서버로부터 연결 확인 수신
+2026-04-15 13:35:11,705 [INFO] ============================================================
+2026-04-15 13:35:11,707 [INFO] 고객 문의 분석 에이전트 시작
+2026-04-15 13:35:11,707 [INFO] 서버 주소: http://localhost:3030
+2026-04-15 13:35:11,707 [INFO] ============================================================
+2026-04-15 13:35:11,707 [INFO] SSE 연결 시도: http://localhost:3030/api/events
+2026-04-15 13:35:12,089 [INFO] HTTP Request: GET http://localhost:3030/api/events "HTTP/1.1 200 OK"
+2026-04-15 13:35:12,089 [INFO] SSE 연결 성공. 이벤트 대기 중...
+2026-04-15 13:35:12,089 [INFO] 서버로부터 연결 확인 수신
+2026-04-15 13:35:25,444 [INFO] [분석 시작] 문의 #4: ������ �� �� �Ǿ����ϴ�
+2026-04-15 13:35:25,446 [INFO]   [1/4] 감정 분석 + 요약 (문의 #4)
+2026-04-15 13:35:25,447 [INFO]   [1/4] 감정 분석 + 요약 (문의 #4)
+2026-04-15 13:35:28,354 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:35:28,367 [INFO]   [2/4] 카테고리 분류 (문의 #4)
+2026-04-15 13:35:28,586 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:35:28,594 [INFO]   [2/4] 카테고리 분류 (문의 #4)
+2026-04-15 13:35:29,856 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:35:29,858 [INFO]   [3/4] 긴급도 평가 (문의 #4)
+2026-04-15 13:35:30,413 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:35:30,416 [INFO]   [3/4] 긴급도 평가 (문의 #4)
+2026-04-15 13:35:31,147 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:35:31,150 [INFO]   [4/4] 키워드 추출 (문의 #4)
+2026-04-15 13:35:31,619 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:35:31,622 [INFO]   [4/4] 키워드 추출 (문의 #4)
+2026-04-15 13:35:32,732 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:35:33,079 [INFO] HTTP Request: PATCH http://localhost:3030/api/inquiries/4/analysis "HTTP/1.1 200 OK"
+2026-04-15 13:35:33,079 [INFO]   분석 결과 저장 완료 (문의 #4)
+2026-04-15 13:35:33,080 [INFO] [분석 완료] 문의 #4: 분류=결제/환불 / 감정=부정 / 긴급도=높음 / 키워드=['주문', '카드', '결제', '환불', '처리']
+2026-04-15 13:35:33,179 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:35:33,533 [INFO] HTTP Request: PATCH http://localhost:3030/api/inquiries/4/analysis "HTTP/1.1 200 OK"
+2026-04-15 13:35:33,533 [INFO]   분석 결과 저장 완료 (문의 #4)
+2026-04-15 13:35:33,535 [INFO] [분석 완료] 문의 #4: 분류=결제/환불 / 감정=부정 / 긴급도=높음 / 키워드=['주문', '카드', '결제', '환불', '처리']
+2026-04-15 13:38:24,357 [ERROR] 예상치 못한 에러: [WinError 10054] 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+2026-04-15 13:38:26,359 [INFO] SSE 연결 시도: http://localhost:3030/api/events
+2026-04-15 13:38:26,359 [INFO] SSE 연결 시도: http://localhost:3030/api/events
+2026-04-15 13:38:31,233 [WARNING] 서버 연결 실패. 4초 후 재시도...
+2026-04-15 13:38:31,233 [WARNING] 서버 연결 실패. 4초 후 재시도...
+2026-04-15 13:38:35,234 [INFO] SSE 연결 시도: http://localhost:3030/api/events
+2026-04-15 13:38:35,348 [INFO] ============================================================
+2026-04-15 13:38:35,348 [INFO] 고객 문의 분석 에이전트 시작
+2026-04-15 13:38:35,348 [INFO] 서버 주소: http://localhost:3030
+2026-04-15 13:38:35,348 [INFO] ============================================================
+2026-04-15 13:38:35,348 [INFO] SSE 연결 시도: http://localhost:3030/api/events
+2026-04-15 13:38:36,222 [INFO] HTTP Request: GET http://localhost:3030/api/events "HTTP/1.1 200 OK"
+2026-04-15 13:38:36,223 [INFO] SSE 연결 성공. 이벤트 대기 중...
+2026-04-15 13:38:36,223 [INFO] 서버로부터 연결 확인 수신
+2026-04-15 13:38:36,328 [INFO] HTTP Request: GET http://localhost:3030/api/events "HTTP/1.1 200 OK"
+2026-04-15 13:38:36,328 [INFO] SSE 연결 성공. 이벤트 대기 중...
+2026-04-15 13:38:36,329 [INFO] 서버로부터 연결 확인 수신
+2026-04-15 13:38:36,336 [INFO] HTTP Request: GET http://localhost:3030/api/events "HTTP/1.1 200 OK"
+2026-04-15 13:38:36,337 [INFO] SSE 연결 성공. 이벤트 대기 중...
+2026-04-15 13:38:36,337 [INFO] 서버로부터 연결 확인 수신
+2026-04-15 13:39:10,497 [INFO] [분석 시작] 문의 #5: 주문한 노트북이 아직 안 왔어요
+2026-04-15 13:39:10,497 [INFO] [분석 시작] 문의 #5: 주문한 노트북이 아직 안 왔어요
+2026-04-15 13:39:10,500 [INFO]   [1/4] 감정 분석 + 요약 (문의 #5)
+2026-04-15 13:39:10,500 [INFO]   [1/4] 감정 분석 + 요약 (문의 #5)
+2026-04-15 13:39:10,500 [INFO]   [1/4] 감정 분석 + 요약 (문의 #5)
+2026-04-15 13:39:12,744 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:12,747 [INFO]   [2/4] 카테고리 분류 (문의 #5)
+2026-04-15 13:39:12,891 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:12,894 [INFO]   [2/4] 카테고리 분류 (문의 #5)
+2026-04-15 13:39:13,420 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:13,435 [INFO]   [2/4] 카테고리 분류 (문의 #5)
+2026-04-15 13:39:13,953 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:13,956 [INFO]   [3/4] 긴급도 평가 (문의 #5)
+2026-04-15 13:39:14,140 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:14,142 [INFO]   [3/4] 긴급도 평가 (문의 #5)
+2026-04-15 13:39:14,838 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:14,840 [INFO]   [3/4] 긴급도 평가 (문의 #5)
+2026-04-15 13:39:15,032 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:15,035 [INFO]   [4/4] 키워드 추출 (문의 #5)
+2026-04-15 13:39:15,320 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:15,322 [INFO]   [4/4] 키워드 추출 (문의 #5)
+2026-04-15 13:39:16,202 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:16,205 [INFO]   [4/4] 키워드 추출 (문의 #5)
+2026-04-15 13:39:16,639 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:16,836 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:17,091 [INFO] HTTP Request: PATCH http://localhost:3030/api/inquiries/5/analysis "HTTP/1.1 200 OK"
+2026-04-15 13:39:17,091 [INFO]   분석 결과 저장 완료 (문의 #5)
+2026-04-15 13:39:17,092 [INFO] [분석 완료] 문의 #5: 분류=배송문의 / 감정=부정 / 긴급도=높음 / 키워드=['노트북', '배송지연', '주문번호', '배송조회', '배송상태']
+2026-04-15 13:39:17,092 [INFO] [분석 시작] 문의 #6: 정말 좋은 서비스 감사합니다
+2026-04-15 13:39:17,093 [INFO]   [1/4] 감정 분석 + 요약 (문의 #6)
+2026-04-15 13:39:17,299 [INFO] HTTP Request: PATCH http://localhost:3030/api/inquiries/5/analysis "HTTP/1.1 200 OK"
+2026-04-15 13:39:17,300 [INFO]   분석 결과 저장 완료 (문의 #5)
+2026-04-15 13:39:17,300 [INFO] [분석 완료] 문의 #5: 분류=배송문의 / 감정=부정 / 긴급도=높음 / 키워드=['노트북', '배송지연', '주문번호', '배송조회', '배송상태']
+2026-04-15 13:39:17,300 [INFO] [분석 시작] 문의 #6: 정말 좋은 서비스 감사합니다
+2026-04-15 13:39:17,301 [INFO]   [1/4] 감정 분석 + 요약 (문의 #6)
+2026-04-15 13:39:17,795 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:18,162 [INFO] HTTP Request: PATCH http://localhost:3030/api/inquiries/5/analysis "HTTP/1.1 200 OK"
+2026-04-15 13:39:18,162 [INFO]   분석 결과 저장 완료 (문의 #5)
+2026-04-15 13:39:18,162 [INFO] [분석 완료] 문의 #5: 분류=배송문의 / 감정=부정 / 긴급도=높음 / 키워드=['노트북', '배송지연', '주문번호', '배송조회', '배송상태']
+2026-04-15 13:39:18,162 [INFO] [분석 시작] 문의 #6: 정말 좋은 서비스 감사합니다
+2026-04-15 13:39:18,163 [INFO]   [1/4] 감정 분석 + 요약 (문의 #6)
+2026-04-15 13:39:19,144 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:19,147 [INFO]   [2/4] 카테고리 분류 (문의 #6)
+2026-04-15 13:39:19,316 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:19,318 [INFO]   [2/4] 카테고리 분류 (문의 #6)
+2026-04-15 13:39:20,344 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:20,347 [INFO]   [3/4] 긴급도 평가 (문의 #6)
+2026-04-15 13:39:20,365 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:20,367 [INFO]   [2/4] 카테고리 분류 (문의 #6)
+2026-04-15 13:39:20,519 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:20,522 [INFO]   [3/4] 긴급도 평가 (문의 #6)
+2026-04-15 13:39:21,390 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:21,393 [INFO]   [4/4] 키워드 추출 (문의 #6)
+2026-04-15 13:39:21,710 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:21,712 [INFO]   [3/4] 긴급도 평가 (문의 #6)
+2026-04-15 13:39:21,751 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:21,753 [INFO]   [4/4] 키워드 추출 (문의 #6)
+2026-04-15 13:39:22,922 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:22,924 [INFO]   [4/4] 키워드 추출 (문의 #6)
+2026-04-15 13:39:22,928 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:23,150 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:23,359 [INFO] HTTP Request: PATCH http://localhost:3030/api/inquiries/6/analysis "HTTP/1.1 200 OK"
+2026-04-15 13:39:23,360 [INFO]   분석 결과 저장 완료 (문의 #6)
+2026-04-15 13:39:23,360 [INFO] [분석 완료] 문의 #6: 분류=칭찬/감사 / 감정=긍정 / 긴급도=낮음 / 키워드=['무선 이어폰', '음질', '배터리', '친절', '만족']
+2026-04-15 13:39:23,574 [INFO] HTTP Request: PATCH http://localhost:3030/api/inquiries/6/analysis "HTTP/1.1 200 OK"
+2026-04-15 13:39:23,575 [INFO]   분석 결과 저장 완료 (문의 #6)
+2026-04-15 13:39:23,575 [INFO] [분석 완료] 문의 #6: 분류=칭찬/감사 / 감정=긍정 / 긴급도=낮음 / 키워드=['무선 이어폰', '음질', '배터리', '친절', '만족']
+2026-04-15 13:39:24,416 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-15 13:39:24,774 [INFO] HTTP Request: PATCH http://localhost:3030/api/inquiries/6/analysis "HTTP/1.1 200 OK"
+2026-04-15 13:39:24,775 [INFO]   분석 결과 저장 완료 (문의 #6)
+2026-04-15 13:39:24,775 [INFO] [분석 완료] 문의 #6: 분류=칭찬/감사 / 감정=긍정 / 긴급도=낮음 / 키워드=['무선 이어폰', '음질', '배터리', '친절', '만족']
