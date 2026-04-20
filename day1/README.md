@@ -25,7 +25,7 @@ config 파일에 tavily의 MCP 설정 정보를 추가
 Tavily MCP 서버를 사용하여 오늘의 한국 경제 시장의 전반적인 데이터를 분석해서 알려줘.
 ```
 
-검색 싶이 조절 :
+검색 깊이 조절 :
 
 ```text
 Tavily MCP 서버를 사용하여 MCP(Model Context Protocol)에 밀접하게 연관된 내용을 검색해서 알려줘.
